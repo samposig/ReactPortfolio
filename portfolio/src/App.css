@@ -1,0 +1,198 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* adding gradient to background of page */
+body {
+  background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
+}
+
+/* adding gradient to just header and setting demensions */
+header {
+  color: white;
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
+  padding: 10px;
+}
+/* name text within header is larger than the rest of the text and a shadow effect was added */
+header h1 {
+  font-style: oblique;
+  font-size: 60px;
+  text-align: left;
+  text-shadow: 2px 2px black;
+}
+/* font size and family set for nav bar or header */
+header nav {
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+header nav ul li {
+  color: white;
+  text-align: right;
+  display: inline-block;
+  margin-left: 5px;
+}
+/* pic of me added to center of header */
+/* .pic {
+  height: 400px;
+  width: 40%;
+  background-image: url("./portfolio-pic.jpeg");
+  background-size: cover;
+  border: 5px solid rgb(75, 27, 27);
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.AboutMe {
+  display: grid;
+  height: 200px;
+}
+
+/* setting label to left side of page */
+h1 {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+}
+/* giving space between paragraphs and around paragraphs */
+p {
+  margin-right: 15px;
+  padding: 15px;
+  clear: both;
+  float: right;
+  font-size: 20px;
+  color:black;
+}
+
+/* Float four columns side by side */
+.column {
+  /* float: left; */
+  width: 50%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Style the counter cards */
+h2 {
+  color: white;
+  font: 40px;
+}
+/* creating look of card- background black, text white */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  background-color: #161515;
+}
+
+/* making title of project bigger than links text */
+.title {
+  font-size: 20px;
+}
+
+/* aligning text on bottom vertically and setting text white */
+footer {
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
+
+footer h1 {
+  width: 20%;
+  margin-left: 20px;
+  display: inline-block;  
+  font-size: 20px;
+}
+/* list only take 75% of the page giving room for title */
+footer ul {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  width: 75%;
+  display: inline-block;
+}
+
+/* adding space between items in the list and setting text vertical */
+footer ul li {
+  display: inline-block;
+  margin: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  [class*="col-"] {
+      width: 100%;
+  }
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* The navbar container */
+nav {
+  overflow: hidden;
+}
+
+/* Navbar links */
+nav ul {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  nav ul li {
+    float: none;
+    width: 100%;
+  }
+}
