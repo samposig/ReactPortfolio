@@ -4,7 +4,10 @@ const AboutMe = ()=> {
     return (
         <div id="AboutMe" className="row">
             <div id="AboutME" className="col-3 col-">
-                <h1>About Me</h1>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <img src={require("../portfolio-pic.jpeg")}></img>
             </div>
             <div id="aboutme" className="column-6">
                 <p> stuff about me

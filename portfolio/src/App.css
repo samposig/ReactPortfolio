@@ -3,23 +3,23 @@
 }
 /* adding gradient to background of page */
 body {
-  background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
+  background-image: linear-gradient(rgb(79, 116, 144),rgb(110, 146, 164));
 }
 
 /* adding gradient to just header and setting demensions */
 header {
   color: white;
-  height: 500px;
+  height: 10%;
   width: 100%;
-  background-image: linear-gradient(rgb(112, 103, 103),rgb(111, 33, 33));
   padding: 10px;
+  background-image: url('./Backgroundpic.jpg');
 }
 /* name text within header is larger than the rest of the text and a shadow effect was added */
 header h1 {
   font-style: oblique;
   font-size: 60px;
   text-align: left;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px white;
 }
 /* font size and family set for nav bar or header */
 header nav {
@@ -29,28 +29,17 @@ header nav {
   font-size: 20px;
 }
 
-header nav ul li {
-  color: white;
-  text-align: right;
-  display: inline-block;
-  margin-left: 5px;
+button {
+  background-color: #89e5f3;
+  border-radius: 8px;
 }
-/* pic of me added to center of header */
-/* .pic {
-  height: 400px;
-  width: 40%;
-  background-image: url("./portfolio-pic.jpeg");
-  background-size: cover;
-  border: 5px solid rgb(75, 27, 27);
-  align-content: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 .AboutMe {
   display: grid;
-  height: 200px;
 }
 
 /* setting label to left side of page */
@@ -60,8 +49,9 @@ h1 {
   text-align: center;
   vertical-align: middle;
   font-size: 40px;
-  color: white;
+  color: black;
 }
+
 /* giving space between paragraphs and around paragraphs */
 p {
   margin-right: 15px;
@@ -86,13 +76,17 @@ p {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+  display: block;
+}
 
 /* Style the counter cards */
 h2 {
-  color: white;
-  font: 40px;
+  color: rgb(213, 209, 208);
+  font: 35px;
 }
+
 /* creating look of card- background black, text white */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
@@ -112,7 +106,12 @@ h2 {
 footer {
   display: inline-block;
   width: 100%;
-  color: white;
+  color: black;
+  height: 10%;
+}
+
+img {
+  width: 300px;
 }
 
 footer h1 {
@@ -121,6 +120,7 @@ footer h1 {
   display: inline-block;  
   font-size: 20px;
 }
+
 /* list only take 75% of the page giving room for title */
 footer ul {
   margin-right: 20px;
@@ -141,6 +141,7 @@ footer ul li {
       width: 100%;
   }
 }
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -155,7 +156,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #a29d3a;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -171,9 +172,10 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 20px;
 }
+
 /* The navbar container */
 nav {
   overflow: hidden;
